@@ -1,6 +1,7 @@
-Initial Cost Estimate is $8,314.80 / month.
+Initial Cost Estimate is $8,411.54 / month.
 
-- Link:  https://calculator.aws/#/estimate?id=1ad649a45f939c16550bf1a28735e657fa026959
+- Link:  https://calculator.aws/#/estimate?id=2d9cbdd29630fc08771e84b5cf4a80234d98a5a6
+- Notes: Per review added storage to all EC2 instances; added Elastic IP; added DB backup (pricing calculator does not show subnets)
 - Primary Items:  
   -  2x  db.r6g.8xlarge RDS database servers
   -  4x  m6g.4xlarge    application servers
@@ -15,12 +16,11 @@ Reduced Cost Estimate is $6,034.53 / month
   - 4x  m6g.4xlarge    application servers
   - 8x  m6g.xlarge     web servers
 
+Increased Cose Estimate: $19,525.50 / month
 
-Increased Cose Estimate: $17,506.92 / month
-
-- Link: https://calculator.aws/#/estimate?id=4db01d13fa0e9876511b9a7721008b1e8addba59
-- Change:  Added additional availability zone, doubled size of web servers
+- Link: https://calculator.aws/#/estimate?id=e76f35b7f323d27d3726eabedf1a8daddb35bed0
+- Notes: Modifications from initial estimate include increased web server count and size, increased app server count and size, larger database server, and provisioned IOPs for database server
 - Primary Items:
-  -  3x  db.r6g.16xlarge RDS database servers
-  -  6x  m6g.4xlarge     application servers
-  - 18x  m6g.xlarge      web servers  
+   - Web server: increased count to 16 with larger EC2 instance (m6gd.2xlarge) and attached NVMe SSD storage
+   - App server: increased count to 6  with larger EC2 instance (m6gd.8xlarge) and attached NVMe SSD storage
+   - DB server:  larger EC2 instance (db.m6g.16xlarge) with provisioned IOPS
