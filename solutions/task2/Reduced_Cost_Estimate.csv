@@ -1,0 +1,14 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),,S3 Standard,0,27.55,330.60,USD,S3 Standard storage (1 TB per month)
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),,Data Transfer,0,45,540.00,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (500 GB per month)"
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),"Aurora MySQL, db.r6g.4xlarge, 3000 IOPS",Amazon Aurora MySQL-Compatible,0,3612.984,43355.81,USD,"Change records per statement (0.38), Nodes (2), Instance Type (db.r6g.4xlarge), Instance Family (Memory optimized), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront), Storage amount (500 GB)"
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),web servers,Amazon EC2,0,588.14,7057.68,USD,"Operating system (Linux), Quantity (8), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (m6g.xlarge)"
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),,Application Load Balancer,0,49.230000000000004,590.76,USD,Number of Application Load Balancers (2)
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,74.7,896.40,USD,Number of NAT Gateways (2)
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),,Amazon CloudFront,0,99.04,1188.48,USD,"Data transfer out to internet (1 TB per month), Data transfer out to origin (100 GB per month), Number of requests (HTTPS) (10000000 per month)"
+Project 2 Step 2 Reduced Cost Estimate,US East (N. Virginia),app servers,Amazon EC2,0,1537.8899999999999,18454.68,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage amount (1 TB), Instance type (m6g.4xlarge)"
+
+Changes:  Reduced the size of the database servers, and reduced the number of web servers; the reduced database server size is likely to reduce the application performance significantly.  
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
